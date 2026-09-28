@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🗳️ Online Voting</h1>
+        <p>Secure Voting Demo</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Welcome to Online Voting</h2>
+            <p>Select one candidate from the list below.</p>
+        </section>
+
+        <section class="voting-card">
+
+            <h2>Select Your Candidate</h2>
+
+            <div class="candidate">
+                <input type="radio" name="candidate" value="Candidate A">
+                <div>
+                    <h3>Candidate A</h3>
+                    <p>Independent Candidate</p>
+                </div>
+            </div>
+
+            <div class="candidate">
+                <input type="radio" name="candidate" value="Candidate B">
+                <div>
+                    <h3>Candidate B</h3>
+                    <p>Independent Candidate</p>
+                </div>
+            </div>
+
+            <div class="candidate">
+                <input type="radio" name="candidate" value="Candidate C">
+                <div>
+                    <h3>Candidate C</h3>
+                    <p>Independent Candidate</p>
+                </div>
+            </div>
+
+            <button onclick="castVote()">Cast Vote</button>
+
+            <p id="message"></p>
+
+        </section>
+
+        <section class="information">
+            <h2>Voting Information</h2>
+            <ul>
+                <li>Choose only one candidate.</li>
+                <li>Review your selection before submitting.</li>
+                <li>This is a frontend demonstration only.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Online Voting Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
